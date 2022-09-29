@@ -1,5 +1,5 @@
 # Flying Bird Game
-A Flappy Bird game developed using javascript and HTML.
+A Flying Bird game developed using javascript and HTML.
 
 
 ## Table of Contents
