@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/birds.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	
+	
+		 <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	<title>Flappy Bird</title>
+</head>
+<body>	
+
+<input type="button" name="next" value="Next" onclick="next()" style="position:absolute;left: 1200px;top:30px;width: 150px;height: 40px ;background-color: #008CBA;">
+ <div class="gallery"> 
+ 	<h1 align="center">Select Flappy Bird</h1>
+		<img src="birds/newbirds/1.jpg" onclick="back(this.id)" id="1"  border="0" style="borderColor:white">  
+	 <img src="birds/newbirds/2.jpg" onclick="back(this.id)" id="2"  border="0" style="borderColor:white">
+	<img src="birds/newbirds/3.jpg" onclick="back(this.id)" id="3"  border="0" style="borderColor:white">
+	<img src="birds/newbirds/4.jpg" onclick="back(this.id)" id="4"  border="0" style="borderColor:white">
+	 <img src="birds/newbirds/5.png" onclick="back(this.id)" id="5"  border="0" style="borderColor:white">
+	 <img src="birds/newbirds/6.jpg" onclick="back(this.id)" id="6"  border="0" style="borderColor:white">
+	 <img src="birds/newbirds/7.jpg" onclick="back(this.id)" id="7"  border="0" style="borderColor:white">
+	 <img src="birds/newbirds/8.jpg" onclick="back(this.id)" id="8"  border="0" style="borderColor:white">
+	<img src="birds/newbirds/9.jpg" onclick="back(this.id)" id="9"  border="0" style="borderColor:white">
+	 <img src="birds/newbirds/10.jpg" onclick="back(this.id)" id="10"  border="0" style="borderColor:white">
+	 <img src="birds/newbirds/11.png" onclick="back(this.id)" id="11"  border="0" style="borderColor:white">
+	<img src="birds/newbirds/12.jpg" onclick="back(this.id)" id="12"  border="0" style="borderColor:white">
+
+
+
+
+
+</div>
+
+<script type="text/javascript">
+	function back(idval)
+	{
+
+		for(var i=1;i<=12;i++)
+		{
+			if(i==idval)
+			{
+					document.getElementById(idval).border = "3";
+		document.getElementById(idval).style.borderColor = "red";
+
+			
+			}
+			else{
+
+	document.getElementById(i).border = "0";
+		document.getElementById(i).style.borderColor = "green";
+			
+			}
+			
+		}
+
+	
+	}
+
+function next()
+{
+window.open("game levels.html","_self");
+}
+
+</script>
+</body>
+</html>

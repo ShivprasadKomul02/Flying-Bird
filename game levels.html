@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("brown.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg center
+{
+    width:400;
+    height:200;
+}
+</style>
+</head>
+<body>
+
+<div class="bg">
+  <h1 style="position: absolute;top: 100px;left: 500px;font-size: 50px;color: brown">Select Your Game level</h1>
+<img src="birds/levels/easy.png" style="position:absolute ;top:250px;left:600px" value="easy" id="easy" onclick="demo()">
+<img src="birds/levels/medium.png" style="position:absolute ;top:350px;left:600px" value="medium" id="medium" onclick="demo()">
+<img src="birds/levels/hard1.png" style="position:absolute ;top:450px;left:600px" value="hard" id="hard" onclick="demo()">
+</div>
+
+<script>
+function demo()
+{
+  window.open("javascript miniproject/flappyhtml1.html","_self");
+}
+</script>
+</body>
+</html>

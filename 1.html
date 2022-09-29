@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/1.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	
+	
+		 <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+	<title>Flappy Bird</title>
+</head>
+<body>	
+<p id ="demo"> </p>
+<input type="button" name="next" value="Next" onclick="next()" style="position:absolute;left: 1200px;top:30px;width: 150px;height: 40px ;background-color: #008CBA;"> 
+ 	<h1 align="center">Select Background </h1>
+ 	
+ <div class="gallery"> 
+	<a href="backgrounds/1p.jpg "  data-lightbox="gallery" id="1">	<img src="backgrounds/1p.jpg" ></a>  
+	<a href="background1/f2.jpg" data-lightbox="gallery"> <img src="backgrounds/2p.jpg" ></a>
+	<a href="background1/fix6.jpg" data-lightbox="gallery"> <img src="backgrounds/3p.jpg" ></a>
+	<a href="background1/fix7.jpg" data-lightbox="gallery"> <img src="backgrounds/4p.jpg"></a>
+	<a href="background1/fix1.jpg" data-lightbox="gallery"> <img src="backgrounds/5p.jpg"></a>
+	
+	<a href="background1/fix2.jpg" data-lightbox="gallery"> <img src="backgrounds/6p.jpg" ></a>
+	<a href="background1/4k.jpg" data-lightbox="gallery"> <img src="backgrounds/7p.jpg" ></a>
+	<a href="background1/lake.jpeg" data-lightbox="gallery"> <img src="backgrounds/8p.jpeg" ></a>
+	<a href="background1/fix10.jpg" data-lightbox="gallery"> <img src="backgrounds/9p.jpg" ></a>
+	<a href="background1/fix7.jpg" data-lightbox="gallery"> <img src="backgrounds/10p.jpg" ></a>
+	<a href="background1/fix11.jpg" data-lightbox="gallery"> <img src="backgrounds/11p.jpg" ></a>
+	<a href="background1/fix9.jpg" data-lightbox="gallery"> <img src="backgrounds/12p.jpg" ></a>
+
+<!-- 	<img src="backgrounds/1p.jpg" onclick="back(this.id)" id="1"  border="0" style="borderColor:white">  
+	<img src="backgrounds/2p.jpg" onclick="back(this.id)" id="2" border="0" style="borderColor:white">
+	<img src="backgrounds/3p.jpg"  onclick="back(this.id)" id="3" border="0" style="borderColor:white">
+	<img src="backgrounds/4p.jpg"  onclick="back(this.id)" id="4" border="0" style="borderColor:white">
+	<img src="backgrounds/5p.jpg"  onclick="back(this.id)" id="5" border="0" style="borderColor:white">
+	<img src="backgrounds/6p.jpg"  onclick="back(this.id)" id="6" border="0" style="borderColor:white">
+	<img src="backgrounds/7p.jpg"  onclick="back(this.id)" id="7" border="0" style="borderColor:white">
+	<img src="backgrounds/8p.jpeg"  onclick="back(this.id)" id="8" border="0" style="borderColor:white">
+	 <img src="backgrounds/9p.jpg"  onclick="back(this.id)" id="9" border="0" style="borderColor:white">
+	 <img src="backgrounds/10p.jpg"  onclick="back(this.id)" id="10" border="0" style="borderColor:white">
+	 <img src="backgrounds/11p.jpg"  onclick="back(this.id)" id="11" border="0" style="borderColor:white">
+	 <img src="backgrounds/12p.jpg"  onclick="back(this.id)" id="12" border="0" style="borderColor:white">
+ -->
+
+
+
+</div>
+<script type="text/javascript">
+	function back(idval)
+	{
+
+		for(var i=1;i<=12;i++)
+		{
+			if(i==idval)
+			{
+					document.getElementById(idval).border = "3";
+		document.getElementById(idval).style.borderColor = "red";
+
+				continue;
+			}
+			else{
+
+	document.getElementById(i).border = "0";
+		document.getElementById(i).style.borderColor = "green";
+			
+			}
+			
+		}
+
+	
+	}
+
+function next()
+{
+window.open("birds.html","_self");
+}
+
+</script>
+</body>
+</html>
